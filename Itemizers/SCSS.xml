@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemizer>
+
+	<recipe name="scss.at-rule.collection">
+		<selector>at-rule.scss:capture(name)</selector>
+		<subrecipes>
+			<include-root-recipes/>
+		</subrecipes>
+	</recipe>
+
+	<recipe name="scss.style">
+		<start-selector>style.scss > selector.scss:capture(name)</start-selector>
+		<end-selector>style.scss</end-selector>
+		<subrecipes>
+			<include-root-recipes/>
+		</subrecipes>
+	</recipe>
+	
+	<recipe name="scss.variable">
+		<selector>variable.definition.scss:capture(name)</selector>
+	</recipe>
+	
+	<recipe name="scss.mixin.collection">
+		<selector>mixin.definition.scss:capture(name)</selector>
+		<subrecipes>
+			<include-root-recipes/>
+		</subrecipes>
+	</recipe>
+
+	<recipe name="scss.comment">
+		<class>ESCommentItem</class>
+		<selector>comment.scss</selector>
+	</recipe>
+	
+</itemizer>

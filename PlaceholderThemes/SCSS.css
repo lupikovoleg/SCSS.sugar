@@ -1,0 +1,72 @@
+/*
+	@theme scss Placeholder
+	@placeholder scss
+*/
+
+@base {
+	color: #000;
+	background-color: #fff;
+}
+
+scss {
+	spell-check: disabled;
+}
+
+scss.selector, variable.definition.style.scss > property-name {
+	color: #3a77bf;
+}
+
+scss > property-name, mixin.scss > property-name {
+	color: #d4430d;
+}
+
+scss > property-assigner, mixin.scss > property-assigner {
+	color: #3a77bf;
+}
+
+scss > property-value, mixin.scss > property-value {
+	color: #43a202;
+}
+
+variable.style.scss > property-name {
+	color: #43a202;
+}
+punctuation.definition.variable.scss {
+	color: #3a77bf;
+}
+variable.definition.style.scss {
+/* 	color: #ff0000; */
+}
+
+punctuation.separator.key-value.scss {
+	color: #000000;
+}
+punctuation.terminator.rule.scss {
+	color: #000000;
+}
+
+scss.at-rule string {
+/* 	color: #474747; */
+}
+
+keyword.important.scss {
+	font-weight: bold;
+	color: #6700b9;
+	width: 12px;
+}
+
+
+mixin.definition.scss {
+	color: #3a77bf;
+}
+mixin.arguments {
+	color: #000000;
+}
+mixin.scss {
+/* 	color: #d6cb58; */
+}
+
+string.quoted.double,string.quoted.single {
+	color: #da65bb;
+	background: #ffffea;
+}

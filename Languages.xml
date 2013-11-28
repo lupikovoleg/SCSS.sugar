@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings>
+
+	<language id="text.scss">
+		
+		<!-- Note: root-zone will be deprecated in the next beta and replaced by syntax-name -->
+		<root-zone>styling.scss</root-zone>
+		<name>SCSS</name>
+		<detectors>
+			<extension>scss</extension>
+		</detectors>
+		
+		<default-extension>scss</default-extension>
+		
+	</language>
+	
+	<meta>
+		<name>SCSS</name>
+		<author>d3head</author>
+		<download format="git">git://github.com/d3head/SCSS.sugar.git</download>
+		<url>http://github.com/d3head/SCSS.sugar</url>
+	</meta>
+	
+</settings>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codesense>
+
+	<provider>
+		<selector>scss > property-name:capture(name) + property-value - punctuation.separator</selector>
+		<completions>com.scss.property.${name}</completions>
+		<complete-match>[a-zA-Z0-9-]*</complete-match>
+		
+		<require-suffix>[^:]|</require-suffix>
+	</provider>
+
+	<provider>
+		<selector>style.scss, property-list.scss > property-name, style.scss > property-value punctuation.separator</selector>
+		<completions>com.scss.properties</completions>
+		<complete-match capture="2">(^)\s*([a-zA-Z0-9-]*)</complete-match>
+	</provider>
+
+	<provider>
+		<selector>style.scss, style.scss > property-name, style.scss > property-value punctuation.separator</selector>
+		<completions>com.scss.browser-specific-properties</completions>
+		<complete-match capture="2">(^)\s*([a-zA-Z0-9-]+)</complete-match>
+	</provider>
+	
+</codesense>
